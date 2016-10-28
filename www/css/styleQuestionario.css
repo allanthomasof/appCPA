@@ -1,0 +1,100 @@
+body {
+    background-image: url(../img/bg.fw.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #EFEFED;
+
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+#nomeAluno {
+    text-align: center;
+    font-size: 12px;
+    color: dimgray;
+    margin-bottom: 2px;
+    opacity: 0.90;
+}
+
+#nomeDisciplina {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: dimgray;
+    opacity: 0.90;
+}
+
+#box {
+    font-size: 13px;
+    position: absolute;
+    margin-top: 35%;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#boxQuestao {
+    text-align: justify;
+    font-size: 11px;
+    color: dimgray;
+}
+
+.pergunta {
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    background-color: #d0e2d0;
+    font-size: 11px;
+    color: darkslategray;
+    font-weight: bold;
+    box-shadow: 1px 0px 1px 0px black;
+}
+
+#textArea {
+    margin-top: 3px;
+    width: 100%;
+}
+
+#btnAvancar {
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+footer {
+    margin-top: 25%;
+    font-size: 11px;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    color: gray;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#boxMensagemFinal {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 50%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.radioButton {
+    margin-left: 20px;
+}
+
+#pop{
+	width: 90%;
+	height: 300px;
+	background:darkgray;
+	position: absolute;
+    opacity: 0.80;
+	left: 5%;
+    border-radius: 100%;
+}
+
+#fecharPop {
+    padding-left: 41%;
+    color: white;
+}

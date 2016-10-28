@@ -1,0 +1,91 @@
+<div ng-controller="ControllerQuestionario" ng-init="iniciaQuestionario();">
+    
+    <div id="box">
+        <div id="nomeAluno">Aluno(a): {{idAluno}} - {{nomeAluno}}</div>
+        <div id="nomeDisciplina">{{nomeDisciplina}}</div>
+        <br>    
+		<div id="boxQuestao">
+		    <form name="form">
+		        
+		        <div class="pergunta">
+		            1 - METODOLOGIA DE ENSINO: refere-se às estratégias de ensino utilizadas pelo(a) professor(a) para favorecer a aprendizagem dos(as) graduandos(as). Indique se o(a) professor(a).
+		        </div>
+		        <input type="radio" ng-model="resposta.r01" name="1" value="A" class="radioButton" ng-required="true"> A. utiliza estratégias que favorecem a aprendizagem. <br>
+		        <input type="radio" ng-model="resposta.r01" name="1" value="B" class="radioButton"> B. às vezes utiliza estratégias que favorecem a aprendizagem. <br>
+		        <input type="radio" ng-model="resposta.r01" name="1" value="C" class="radioButton"> C. utiliza estratégias que não favorecem a aprendizagem. 
+
+
+
+		        <br><br><br>
+		        <div class="pergunta">
+		            2 - CLAREZA DE COMUNICAÇÃO: é esperado que o(a) professor(a) se faça entender pelos(as) graduandos(as). Indique se o(a) professor(a).
+		        </div>
+		        <input type="radio" ng-model="resposta.r02" name="2" value="A" class="radioButton" ng-required="true"> A. comunica-se de forma clara, facilitando o entendimento. <br>
+		        <input type="radio" ng-model="resposta.r02" name="2" value="B" class="radioButton"> B. empenha-se na comunicação, mas é parcialmente entendido(a). <br>
+		        <input type="radio" ng-model="resposta.r02" name="2" value="C" class="radioButton"> C. comunica-se de forma que dificulta o entendimento. 
+
+
+
+		        <br><br><br>
+		        <div class="pergunta">
+		            3 - PLANO DE ENSINO: é esperado que o(a) professor(a) apresente e desenvolva o Plano de Ensino. Indique se o(a) professor(a).
+		        </div>
+		        <input type="radio" ng-model="resposta.r03" name="3" value="A" class="radioButton" ng-required="true"> A. apresenta e desenvolve o plano de ensino proposto. <br>
+		        <input type="radio" ng-model="resposta.r03" name="3" value="B" class="radioButton"> B. apresenta, mas não desenvolve o plano de ensino proposto. <br>
+		        <input type="radio" ng-model="resposta.r03" name="3" value="C" class="radioButton"> C. não apresenta o plano de ensino. 
+		        
+
+
+		        <br><br><br>
+		        <div class="pergunta">
+		            4 - RELEVÂNCIA DA DISCIPLINA: é esperado que o(a) professor(a) desenvolva a disciplina, revelando, na prática docente, seu significado e sua importância para a formação. Indique se o(a) professor(a).
+		        </div>
+		        <input type="radio" ng-model="resposta.r04" name="4" value="A" class="radioButton" ng-required="true"> A. revela o significado e a importância da disciplina. <br>
+		        <input type="radio" ng-model="resposta.r04" name="4" value="B" class="radioButton"> B. algumas vezes revela o significado e a importância da disciplina. <br>
+		        <input type="radio" ng-model="resposta.r04" name="4" value="C" class="radioButton"> C. não revela o significado e a importância da disciplina.
+
+		        
+		        
+		        <br><br><br>
+		        <div class="pergunta">
+		            5 - ANÁLISE DAS AVALIAÇÕES DOS(AS) GRADUANDOS(AS): é esperado que o(a) professor(a) analise os trabalhos realizados pelos(as) graduandos(as) e ofereça contribuições pertinentes. Indique se o(a) professor(a).
+		        </div>
+		        <input type="radio" ng-model="resposta.r05" name="5" value="A" class="radioButton" ng-required="true"> A. sempre oferece contribuições pertinentes. <br>
+		        <input type="radio" ng-model="resposta.r05" name="5" value="B" class="radioButton"> B. algumas vezes oferece contribuições pertinentes.  <br>
+		        <input type="radio" ng-model="resposta.r05" name="5" value="C" class="radioButton"> C. não oferece contribuições pertinentes. 
+
+
+
+		        <br><br><br>
+		        <div class="pergunta">
+		            6 - PONTUALIDADE: é definida como cumprimento de início e término do horário de aula. Indique se o(a) professor(a).
+		        </div>
+		        <input type="radio" ng-model="resposta.r06" name="6" value="A" class="radioButton" ng-required="true"> A. é pontual <br>
+		        <input type="radio" ng-model="resposta.r06" name="6" value="B" class="radioButton"> B. tem pequenos atrasos. <br>
+		        <input type="radio" ng-model="resposta.r06" name="6" value="C" class="radioButton"> C. está regularmente atrasado. 
+
+
+
+		        <br><br><br>
+		        <div class="pergunta">
+		            7 - QUESTÃO ABERTA: registre aqui outros comentários referentes ao (à) professor(a) desta disciplina.
+		        </div>
+		        <textarea cols=60 id="textArea" ng-model="resposta.r07" rows="7" name="7" maxlength="255"  ng-required="true" wrap="hard" placeholder="Sua opinião é muito importante para nós!"></textarea>
+
+
+
+		        <br><br><br>
+		        <div class="pergunta">
+		            8 - QUESTÃO ABERTA: registre aqui outros comentários referentes às condições de infraestrutura para a disciplina (salas, laboratórios e recursos audiovisuais).
+		        </div>
+		        <textarea cols=60 id="textArea" ng-model="resposta.r08" rows="7" name="8" maxlength="255"  ng-required="true" wrap="hard" placeholder="Sua opinião é muito importante para nós!"></textarea>
+
+		        
+		        <br><br><br>
+
+		         <button ng-disabled="form.invalid" type="submit" id="btnAvancar" class="btn btn-success" ng-click="guardarDados(resposta);">Avançar</button>
+
+		    </form>
+		</div>
+    </div>
+</div>

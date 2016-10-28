@@ -1,0 +1,88 @@
+body {
+    background-image: url(../img/bg.fw.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #EFEFED;
+}
+
+#botaoAdm {
+    position: absolute;
+    width: 100%;
+}
+
+#transparente { 
+    float:right;
+    margin-top: -115px;
+    margin-right: 15px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+#formLogin {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+#textfield {
+    margin-top: 10px;
+    border: black;
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 13px;
+    border: 1px solid #C4CAC6;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+}
+
+entrar {
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.jumbotron {
+    text-align: center;
+    color: #636662;
+}
+
+#textBox {
+    font-size: 10.5px;
+    margin-top: 35%;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    color: gray;
+}
+
+#senhaIncorreta {
+    position: absolute;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    color: red;
+    font-size: 12px;
+    margin-left: 25%;
+}
+
+footer {
+    margin-top: 25%;
+    font-size: 10.5px;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    color: dimgray;
+}
+
+#botaoVoltar {
+    position: absolute;
+}
+
+#imgVoltar {
+    margin-top: -60px;
+}

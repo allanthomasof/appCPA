@@ -1,0 +1,34 @@
+<div ng-init="iniciar();">
+    <div id="botaoCPA">
+        Status atual: <status id="status" ng-class="statusStyle">{{status}}</status>
+        <button type="button" class="btn btn-success" ng-click="alterarStatus();">Alterar Status da CPA</button>
+    </div>
+
+    <form id="relatorios" name="form">
+        <h1>Relatórios</h1>
+        <label>Selecione o tipo de relatório:</label>
+        <select id="select" ng-model="relatorio.tipo" ng-required="true">
+            <option ng-model="relatorio.tipo" value="G_Universidade">Gráfico da Universidade</option>
+        </select>
+        <table id="tabelaData">
+            <td>
+                <label>Data Inicial:</label>
+                <input class="form-control" id="date" type="date" ng-model="relatorio.dataInicial" ng-required="true"/>
+            </td>
+            <td>
+                <label>Data Final:</label>
+                <input class="form-control" id="dataFinal" type="date" ng-model="relatorio.dataFinal" ng-required="true"/>
+            </td>
+        </table>
+        <button type="button" id="botaoRelatorio" class="btn btn-success"
+                ng-click="gerarRelatorio(relatorio);" ng-disabled="form.$invalid">Gerar Relatório
+        </button>
+    </form>
+    <div id="resultadoRelatorio">
+        <div id="descricao">
+            {{descricao}}
+        </div>
+        <div id="grafico">
+        </div>
+    </div>
+</div>
